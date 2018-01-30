@@ -1,0 +1,112 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #ffffff;
+    background-color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*Background color for rows*/
+
+.jumbo {
+    padding: 25px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #34495e;
+}
+
+.second {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    font-weight: 200;
+    color: inherit;
+    background-color: #34495e;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+table {
+  font-size: 16px;
+  white-space: normal;
+
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  width: 50%;
+  margin: 10px 5px;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+
+.preloader-wrapper {
+}
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat;
+
+}
+.gif {
+    display: none !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: auto !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: rgba( 255, 255, 255, .8)  !important;
+    background-repeat: repeat;
+
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+
+body.loading {
+    overflow: hidden;
+}
+
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+body.loading .gif {
+    display: block !important;
+    background-repeat: repeat;
+
+
+}
